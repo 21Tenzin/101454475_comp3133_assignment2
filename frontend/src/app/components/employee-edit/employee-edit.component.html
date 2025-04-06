@@ -1,0 +1,22 @@
+<h2>Edit Employee</h2>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <label>First Name:</label>
+  <input formControlName="firstname" type="text" /><br />
+
+  <label>Last Name:</label>
+  <input formControlName="lastname" type="text" /><br />
+
+  <label>Email:</label>
+  <input formControlName="email" type="email" /><br />
+
+  <label>Department:</label>
+  <input formControlName="department" type="text" /><br />
+
+  <label>Position:</label>
+  <input formControlName="position" type="text" /><br />
+
+  <label>Salary:</label>
+  <input formControlName="salary" type="number" /><br />
+
+  <button type="submit" [disabled]="employeeForm.invalid">Update</button>
+</form>

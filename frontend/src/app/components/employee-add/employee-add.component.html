@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Add New Employee</h2>
+
+  <div class="card">
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+      <label>First Name</label>
+      <input formControlName="firstname" type="text" />
+
+      <label>Last Name</label>
+      <input formControlName="lastname" type="text" />
+
+      <label>Email</label>
+      <input formControlName="email" type="email" />
+
+      <label>Department</label>
+      <input formControlName="department" type="text" />
+
+      <label>Position</label>
+      <input formControlName="position" type="text" />
+
+      <label>Salary</label>
+      <input formControlName="salary" type="number" />
+
+      <button type="submit">Add Employee</button>
+    </form>
+  </div>
+</div>
